@@ -27,6 +27,7 @@ function setMainHeight(){
 	var freeHeight = (availHeight - (headerHeight + footerHeight)) + 'px';
 	if (usedHeight < availHeight){
 		main.style.height = freeHeight;
+		console.log("Free height is: " + freeHeight + "px while availHeight is: " + availHeight + "px.");
 	}
 }
 
