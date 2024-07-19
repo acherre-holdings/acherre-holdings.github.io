@@ -2,7 +2,7 @@ var setMainHeight = function(){
 	var header = document.getElementById('headerMain');
 	var footer = document.getElementById('footerMain');
 	var main = document.getElementById('mainMain');
-	var availHeight = window.innerHeight;
+	var availHeight = document.body.offsetHeight;//window.innerHeight;
 	var _availHeight = window.screen.availHeight;
 	console.log("window.screen.availHeight:", _availHeight);
 	var headerHeight = header.offsetHeight;
