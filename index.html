@@ -37,14 +37,15 @@ var setMainHeight = function(){
 	var footerHeight = footer.offsetHeight;
 	var mainHeight = main.offsetHeight;
 	var usedHeight = headerHeight + footerHeight + mainHeight;
-	var freeHeight = (availHeight - (headerHeight + footerHeight)) + 'px';
+    var headerFooterHeight = headerHeight + footerHeight;
+	var freeHeight = (vailHeight - headerFooterHeight;
 	if (usedHeight < availHeight){
-		main.style.height = freeHeight;
+		main.style.height = freeHeight+'px';
 		console.log("Free height is: " + freeHeight + "px while availHeight is: " + availHeight + "px.");
 	}
 }
-
-addEventListener("load", setMainHeight);
+setMainHeight();
+document.addEventListener("load", setMainHeight);
     </script>
 <body>
     <header id="headerMain" class="header-main">
@@ -83,5 +84,42 @@ addEventListener("load", setMainHeight);
             Hello, World. Acherre&trade;
         </h2>
     </footer>
+    <script>
+        function _testFunction(e) {
+	console.log("Clicked:", e.innerText + " " + e.tagName);
+}
+function menuItem(e) {
+	_testFunction(e);
+}
+function accMenu(e) {
+	_testFunction(e);
+}
+function populateHeaderLinks(linklist) {
+	linklist = linklist | 'nullEntryProvided';
+	_testFunction(linklist);
+}
+function selectLang(e) {
+	_testFunction(e);
+}
+
+var setMainHeight = function(){
+	var header = document.getElementById('headerMain');
+	var footer = document.getElementById('footerMain');
+	var main = document.getElementById('mainMain');
+	var availHeight = window.screen.availHeight;
+	var headerHeight = header.offsetHeight;
+	var footerHeight = footer.offsetHeight;
+	var mainHeight = main.offsetHeight;
+	var usedHeight = headerHeight + footerHeight + mainHeight;
+    var headerFooterHeight = headerHeight + footerHeight;
+	var freeHeight = (vailHeight - headerFooterHeight;
+	if (usedHeight < availHeight){
+		main.style.height = freeHeight+'px';
+		console.log("Free height is: " + freeHeight + "px while availHeight is: " + availHeight + "px.");
+	}
+}
+setMainHeight();
+document.addEventListener("load", setMainHeight);
+    </script>
 </body>
 </html>
