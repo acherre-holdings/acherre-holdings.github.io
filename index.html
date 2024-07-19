@@ -1,7 +1,51 @@
 <!DOCTYPE html>
 <html>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link 
+        rel="stylesheet"
+        href="./public/stylesheets/acherre.css">
+    <script src="./public/scripts/acherre.js"></script>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header id="headerMain" class="header-main">
+        <div id="headerMainContainer" class="header-main--container flex-container flex-space-between mobile-flex--column">
+            <div class="header-main--nav-container flex-container flex-grow--9 flex-start mobile-flex--align-stretch">
+                <button id="accessibilityMenuButton" onclick="accMenu(this)" class="button--clear-btn
+                             header-link
+                             on-hover--underline
+                             text-size--small
+                             text-case--uppercase">Accessibility
+                </button>
+            </div>
+            <div id="headerMainNavContainer" class="header-main--nav-container flex-container flex-grow--3 flex-space-between mobile-flex--align-stretch">
+                <a href="" onclick="menuItem(this)" class="header-main--nav-item-link header-link on-hover--underline text-size--small text-case--uppercase clear-link">Investors</a>
+                <a href="" onclick="menuItem(this)" class="header-main--nav-item-link header-link on-hover--underline text-size--small text-case--uppercase clear-link">Press</a>
+                <a href="" onclick="menuItem(this)" class="header-main--nav-item-link header-link on-hover--underline text-size--small text-case--uppercase clear-link">Suppliers</a>
+            </div>
+            <div id="headerMainLangNavContainer" class="header-main--nav-container flex-container flex-grow--1 flex-end mobile-flex--align-stretch">
+                <a href="" data-language="AR" onclick="selectLang(this.dataset.language)" class="header-main--nav-item-link header-link on-hover--underline text-size--small text-case--uppercase clear-link language-selector">عربي</a>
+                <a href="" data-language="DE" onclick="selectLang(this)" class="header-main--nav-item-link header-link on-hover--underline text-size--small text-case--uppercase clear-link language-selector">Deutsch</a>
+                <a href="" data-language="EN" onclick="selectLang(this)" class="header-main--nav-item-link header-link on-hover--underline text-size--small text-case--uppercase clear-link language-selector">English</a>
+                <a href="" data-language="FR" onclick="selectLang(this)" class="header-main--nav-item-link header-link on-hover--underline text-size--small text-case--uppercase clear-link language-selector">Français</a>
+                <a href="" data-language="IT" onclick="selectLang(this)" class="header-main--nav-item-link header-link on-hover--underline text-size--small text-case--uppercase clear-link language-selector">Italiano</a>
+            </div>
+        </div>
+        <!-- 				</div> -->
+    </header>
+    
+    <main id="mainMain">
+        <h1>Hello World</h1>
+        <p>I'm hosted with GitHub Pages.</p>
+    </main>
+    
+    <footer id="footerMain" class="footer-main">
+        <h2>
+            Hello, World. Acherre&trade;
+        </h2>
+    </footer>
 </body>
 </html>
