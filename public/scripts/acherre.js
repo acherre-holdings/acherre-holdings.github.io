@@ -19,7 +19,7 @@ var setMainHeight = function(){
 	var header = document.getElementById('headerMain');
 	var footer = document.getElementById('footerMain');
 	var main = document.getElementById('mainMain');
-	var availHeight = window.screen.availHeight;
+	var availHeight = window.innerHeight;
 	var headerHeight = header.offsetHeight;
 	var footerHeight = footer.offsetHeight;
 	var mainHeight = main.offsetHeight;
@@ -31,4 +31,4 @@ var setMainHeight = function(){
 	}
 }
 
-addEventListener("load", setMainHeight);
+window.addEventListener("load", setMainHeight);
