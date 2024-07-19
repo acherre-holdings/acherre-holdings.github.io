@@ -15,7 +15,7 @@ function selectLang(e) {
 	_testFunction(e);
 }
 
-function setMainHeight(){
+var setMainHeight = function(){
 	var header = document.getElementById('headerMain');
 	var footer = document.getElementById('footerMain');
 	var main = document.getElementById('mainMain');
@@ -31,4 +31,4 @@ function setMainHeight(){
 	}
 }
 
-window.addEventListener("load", setMainHeight);
+addEventListener("load", setMainHeight);
