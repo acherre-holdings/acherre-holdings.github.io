@@ -1,6 +1,9 @@
 html * {
     color: #0c0059;
   }
+body{
+  max-height: 100vh;
+}
   
   .header-main {
     box-sizing: border-box;
